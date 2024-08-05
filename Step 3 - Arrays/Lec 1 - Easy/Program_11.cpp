@@ -12,4 +12,7 @@ int main() {
     }
 
     // write code here
+    for (auto element : arr) {
+        cout << element*n << " ";
+    }
 }
