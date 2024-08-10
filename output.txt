@@ -1,1 +1,1 @@
-Missing number : 9
+Appears once : 4

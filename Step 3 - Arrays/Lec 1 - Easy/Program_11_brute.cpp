@@ -3,12 +3,12 @@ using namespace std;
 
 // Find missing number in an array
 
-int missingNum(vector<int> arr) {
-    int n = arr.size();
-    for (int i = 1; i < n; i++) {
+int missingNumber(vector<int> &nums) {
+    int n = nums.size();
+    for (int i = 0; i <= n; i++) {
         int flag = 0;
-        for (int j = 0; j < n - 1; j++) {
-            if (arr[j] == i) {
+        for (int j = 0; j < n; j++) {
+            if (nums[j] == i) {
                 flag = 1;
                 break;
             }
@@ -17,17 +17,18 @@ int missingNum(vector<int> arr) {
             return i;
         }
     }
+    return INT_MIN; // making the compiler happy
 }
 
 int main() {
     int n;
     cin >> n;
     vector<int> arr(n);
-    for (int i = 0; i < n - 1; i++) {
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
 
-    cout << "Missing number : " << missingNum(arr);
+    cout << "Missing number : " << missingNumber(arr);
 }
 
 // Time-complexity: O(N^2)

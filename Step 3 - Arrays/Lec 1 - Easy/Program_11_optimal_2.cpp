@@ -2,22 +2,20 @@
 using namespace std;
 
 // Find missing number in an array.
-// Use Hashing.
+// Using XOR-concept.
 
 int missingNum(vector<int> arr) {
     int n = arr.size();
-    vector<int> hash(n + 1);
-    for (int i = 0; i < n; i++) { // O(N)
-        hash[arr[i]] = 1;
+    int XOR_1 = 0;
+    int XOR_2 = 0;
+
+    for (int i = 0; i <= n; i++) {
+        XOR_1 = XOR_1 ^ i;
+        if (i < n)
+            XOR_2 = XOR_2 ^ arr[i];
     }
 
-    for (int i = 0; i <= n; i++) { // O(N)
-        if (hash[i] == 0) {
-            return i;
-        }
-    }
-
-    return INT_MIN; // making the compiler happy
+    return XOR_1 ^ XOR_2;
 }
 
 int main() {
@@ -31,5 +29,7 @@ int main() {
     cout << "Missing number : " << missingNum(arr);
 }
 
-// Time-complexity  : O(2N)
-// Space-complexity : O(N)
+// Time-complexity  : O(N)
+// Space-complexity : O(1)
+// no-need for long-type
+// takes less storage than sum-concept
