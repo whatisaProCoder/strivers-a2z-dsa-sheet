@@ -1,1 +1,2 @@
-Appears once : 4
+Sum K = 3
+Longest subarray length : 3
