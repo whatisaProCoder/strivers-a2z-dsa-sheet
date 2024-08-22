@@ -1,1 +1,2 @@
-Maximum profit = 5
+The highest frequency element is : 10
+The lowest frequency element is  : 15

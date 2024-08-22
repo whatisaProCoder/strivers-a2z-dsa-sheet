@@ -14,7 +14,7 @@ int main() {
     st.pop(); // {3,3,2,1}
 
     cout << st.top() << endl;   // prints 3
-    cout << st.size() << endl;  // prints 3
+    cout << st.size() << endl;  // prints 4
     cout << st.empty() << endl; // prints 1 (false), 0 (true)
 
     stack<int> stx;
