@@ -24,7 +24,7 @@ int main() {
         }
     }
 
-    cout << "Largest element: " << largest;
+    cout << "Largest element : " << largest;
 }
 
-// Time-complexity: O(N)
+// Time-complexity : O(N)
