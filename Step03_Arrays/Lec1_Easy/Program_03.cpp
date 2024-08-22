@@ -31,4 +31,4 @@ int main() {
     }
 }
 
-// Time-complexity: O(N)
+// Time-complexity : O(N)

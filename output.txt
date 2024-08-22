@@ -1,1 +1,1 @@
-The second largest element : 6
+Sorted

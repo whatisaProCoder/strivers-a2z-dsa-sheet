@@ -2,6 +2,9 @@ package Step03_Arrays.Lec1_Easy;
 
 import java.util.*;
 
+// Second Largest Element in an Array without sorting
+// only for non-negative numbers
+
 public class Program_02 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
