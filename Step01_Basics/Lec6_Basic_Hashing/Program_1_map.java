@@ -2,6 +2,8 @@ package Step01_Basics.Lec6_Basic_Hashing;
 
 import java.util.*;
 
+// Count elements of array using map
+
 public class Program_1_map {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
