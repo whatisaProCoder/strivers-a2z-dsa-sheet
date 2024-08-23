@@ -1,13 +1,11 @@
 package Step03_Arrays.Lec1_Easy;
 
-import java.util.*;
-
-// Moving zeroes to end 
+// Moving zeroes to end
 
 public class Program_07 {
     public static void main(String[] args) {
         int[] arr = {1, 0, 2, 3, 2, 0, 0, 4, 5, 1};
-        int n=arr.length;
+        int n = arr.length;
 
         // processing
         int i, j = -1;
