@@ -25,7 +25,7 @@ int main() {
     }
 
     vector<int> _union_;      // extra space taken
-    for (auto element : st) { // O(n1+n2)
+    for (auto element : st) { // O(n1 + n2)
         _union_.push_back(element);
     }
 
@@ -34,5 +34,5 @@ int main() {
     }
 }
 
-// Time-complexity: O(n1 log n) + O(n2 log n) + O(n1+n2)
-// Space-complexity: O(n1+n2) + O(n1+n2)
+// Time-complexity  : O(n1 log n) + O(n2 log n) + O(n1+n2)
+// Space-complexity : O(n1 + n2) + O(n1 + n2)
