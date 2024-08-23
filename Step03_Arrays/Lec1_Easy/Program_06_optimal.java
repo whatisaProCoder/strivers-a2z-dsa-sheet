@@ -5,32 +5,39 @@ import java.util.*;
 // Left Rotate an array by 'd' places
 
 public class Program_06_optimal {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int n = in.nextInt();
-        int d = in.nextInt();
-        ArrayList<Integer> arr = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            arr.add(in.nextInt());
+    public static void reverse(int[] arr, int start, int end) {
+        while (start <= end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
         }
+    }
 
+    public static void leftRotate(int[] arr, int n, int d) {
         d = d % n;
 
         // O(d)
-        Collections.reverse(arr.subList(0, d));
+        reverse(arr, 0, d - 1);
 
         // O(n-d)
-        Collections.reverse(arr.subList(d, n));
+        reverse(arr, d, n - 1);
 
         // O(n)
-        Collections.reverse(arr.subList(0, n));
+        reverse(arr, 0, n - 1);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
+        int n = arr.length;
+        int d = 4; // rotate by 2 places;
+
+        leftRotate(arr, n, d);
 
         for (var element : arr) {
             System.out.print(element + " ");
         }
-
-        in.close();
     }
 }
 

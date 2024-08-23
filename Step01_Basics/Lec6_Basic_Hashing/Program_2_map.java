@@ -6,10 +6,7 @@ import java.util.*;
 
 public class Program_2_map {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        String s;
-        s = in.next();
+        String s = "aabbbcccccddddddeeeeee";
 
         SortedMap<Character, Integer> map = new TreeMap<>();
         for (int i = 0; i < s.length(); i++) {
@@ -27,17 +24,12 @@ public class Program_2_map {
             System.out.println(mapElement.getKey() + " -> " + mapElement.getValue());
         }
 
-        int q;
-        q = in.nextInt();
-        while (q-- > 0) {
-            char ch;
-            ch = in.next().charAt(0);
+        char[] query = {'b', 'd'};
+        for (char ch : query) {
             if (map.containsKey(ch))
                 System.out.println(map.get(ch));
             else
                 System.out.println(0);
         }
-
-        in.close();
     }
 }

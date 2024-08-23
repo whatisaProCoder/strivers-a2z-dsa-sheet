@@ -3,21 +3,14 @@ package Step01_Basics.Lec6_Basic_Hashing;
 import java.util.*;
 
 // Count elements of array using map
-
 public class Program_1_map {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = in.nextInt();
-        }
+        int[] arr = {1, 1, 2, 2, 2, 3, 4, 7, 7, 5, 5, 3, 3, 4, 6};
+        int n = arr.length;
 
         // precompute
         SortedMap<Integer, Integer> map = new TreeMap<>();
-        for (int i = 0; i < n; i++) {
-            int key = arr[i];
+        for (int key : arr) {
             int frequency = 0;
             if (map.containsKey(key))
                 frequency = map.get(key);
@@ -31,18 +24,13 @@ public class Program_1_map {
             System.out.println(mapElement.getKey() + " -> " + mapElement.getValue());
         }
 
-        int q;
-        q = in.nextInt();
-        while (q-- > 0) {
-            int num;
-            num = in.nextInt();
+        int[] query = {1, 4, 7};
+        for (int num : query) {
             if (map.containsKey(num))
                 System.out.println(map.get(num));
             else
                 System.out.println(0);
         }
-
-        in.close();
     }
 }
 

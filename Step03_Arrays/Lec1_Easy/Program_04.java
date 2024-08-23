@@ -6,13 +6,8 @@ import java.util.*;
 
 public class Program_04 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = in.nextInt();
-        }
+        int[] arr = {1, 1, 2, 2, 2, 3, 3, 5, 5, 5, 8, 8, 8, 9, 9};
+        int n = arr.length;
 
         System.out.println("Before processing...");
         for (var element : arr) {
@@ -35,7 +30,5 @@ public class Program_04 {
         for (int j = 0; j < i + 1; j++) {
             System.out.print(arr[j] + " ");
         }
-
-        in.close();
     }
 }

@@ -6,14 +6,8 @@ import java.util.*;
 
 public class Program_01 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int n = in.nextInt();
-        int nums[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            nums[i] = in.nextInt();
-        }
-
+        int[] nums = {7, 8, 66, 4, 2, 4, 6, 88, 2};
+        
         // processing
         int largest = nums[0];
         for (var element : nums) {
@@ -23,8 +17,6 @@ public class Program_01 {
         }
 
         System.out.println("Largest Element : " + largest);
-
-        in.close();
     }
 }
 

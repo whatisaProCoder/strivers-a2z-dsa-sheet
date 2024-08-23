@@ -6,18 +6,12 @@ import java.util.*;
 
 public class Program_1_umap {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = in.nextInt();
-        }
+        int[] arr = {1, 1, 2, 2, 2, 3, 4, 7, 7, 5, 5, 3, 3, 4, 6};
+        int n = arr.length;
 
         // precompute
         Map<Integer, Integer> umap = new HashMap<>();
-        for (int i = 0; i < n; i++) {
-            int key = arr[i];
+        for (int key : arr) {
             int frequency = 0;
             if (umap.containsKey(key))
                 frequency = umap.get(key);
@@ -31,18 +25,13 @@ public class Program_1_umap {
             System.out.println(mapElement.getKey() + " -> " + mapElement.getValue());
         }
 
-        int q;
-        q = in.nextInt();
-        while (q-- > 0) {
-            int num;
-            num = in.nextInt();
+        int[] query = {1, 4, 7};
+        for (int num : query) {
             if (umap.containsKey(num))
                 System.out.println(umap.get(num));
             else
                 System.out.println(0);
         }
-
-        in.close();
     }
 }
 

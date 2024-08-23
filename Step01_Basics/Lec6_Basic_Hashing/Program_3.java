@@ -5,7 +5,7 @@ import java.util.*;
 // Find the highest/lowest frequency element
 
 public class Program_3 {
-    void frequency(int arr[]) {
+    void frequency(int[] arr) {
         Map<Integer, Integer> umap = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
             int key = arr[i];
@@ -39,7 +39,7 @@ public class Program_3 {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 10, 5, 10, 15, 10, 5 };
+        int[] arr = {10, 5, 10, 15, 10, 5};
 
         new Program_3().frequency(arr);
     }

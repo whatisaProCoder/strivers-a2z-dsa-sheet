@@ -5,16 +5,11 @@ import java.util.*;
 // Second Largest Element in an Array without sorting
 // only for non-negative numbers
 
+@SuppressWarnings("ALL")
 public class Program_02 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int n = in.nextInt();
-        int arr[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = in.nextInt();
-        }
-
+        int[] arr = {1, 2, 77, 6, 4, 33, 2, 6, 88};
+        int n = arr.length;
         // processing
         int largest = arr[0];
         /*
@@ -40,7 +35,5 @@ public class Program_02 {
          */
 
         System.out.println("The second largest element : " + slargest);
-
-        in.close();
     }
 }
