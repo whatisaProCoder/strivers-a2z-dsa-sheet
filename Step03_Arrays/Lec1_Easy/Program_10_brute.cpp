@@ -18,7 +18,7 @@ int main() {
         cin >> b[i];
     }
 
-    // making b-array smaller, since visiter-array works on b-array,
+    // making b-array smaller, since visitor-array works on b-array,
     // to make space-complexity lesser
     if (b.size() > a.size()) {
         b.swap(a);
@@ -47,5 +47,5 @@ int main() {
     }
 }
 
-// Time-complexity:  O(n1*n2)
-// Space-complexity: O(n2)
+// Time-complexity  : O(n1*n2)
+// Space-complexity : O(n2)
