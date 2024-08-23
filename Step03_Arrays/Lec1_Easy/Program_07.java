@@ -6,18 +6,13 @@ import java.util.*;
 
 public class Program_07 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-
-        int n = in.nextInt();
-        ArrayList<Integer> arr = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            arr.add(in.nextInt());
-        }
+        int[] arr = {1, 0, 2, 3, 2, 0, 0, 4, 5, 1};
+        int n=arr.length;
 
         // processing
         int i, j = -1;
         for (i = 0; i < n; i++) {
-            if (arr.get(i) == 0) {
+            if (arr[i] == 0) {
                 j = i;
                 break;
             }
@@ -26,8 +21,10 @@ public class Program_07 {
         // then no need of processing further
         if (j != -1)
             for (i = j + 1; i < n; i++) {
-                if (arr.get(i) != 0) {
-                    Collections.swap(arr, i, j);
+                if (arr[i] != 0) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
                     j++;
                 }
             }
@@ -35,8 +32,6 @@ public class Program_07 {
         for (var element : arr) {
             System.out.print(element + " ");
         }
-
-        in.close();
     }
 }
 
