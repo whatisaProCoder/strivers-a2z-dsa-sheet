@@ -2,7 +2,7 @@
 using namespace std;
 
 // Linear Search
-// Return index of first occurence
+// Return index of first occurrence
 
 int search(vector<int> &arr, int key) {
     for (int i = 0; i < arr.size(); i++) {
@@ -29,3 +29,6 @@ int main() {
         cout << num << " is not found";
     }
 }
+
+// Time-complexity  : O(n)
+// Space-complexity : O(1)

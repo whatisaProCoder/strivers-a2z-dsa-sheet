@@ -33,5 +33,5 @@ public class Program_07 {
     }
 }
 
-// Time-complexity : O(N)
+// Time-complexity  : O(N)
 // Space-complexity : O(1)

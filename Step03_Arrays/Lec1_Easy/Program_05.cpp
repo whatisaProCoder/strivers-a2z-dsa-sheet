@@ -22,5 +22,5 @@ int main() {
     }
 }
 
-// Time-complexity :  O(N)
+// Time-complexity  : O(N)
 // Space-complexity : O(1)
