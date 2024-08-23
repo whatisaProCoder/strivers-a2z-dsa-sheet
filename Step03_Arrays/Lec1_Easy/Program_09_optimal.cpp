@@ -51,5 +51,5 @@ int main() {
     }
 }
 
-// Time-complexity:  O(n1+n2)
-// Space-complexity: O(n1+n2) for returning the unionArr
+// Time-complexity  : O(n1+n2)
+// Space-complexity : O(n1+n2) for returning the unionArr
