@@ -14,14 +14,14 @@ int main() {
 
     d = d % n;
     auto it = arr.begin();
-    reverse(it, it + d);     // O(d)
-    reverse(it + d, it + n); // O(n-d)
-    reverse(it, it + n);     // O(n)
+    reverse(it, it + d);      // O(d)
+    reverse(it + d, it + n);  // O(n-d)
+    reverse(it, it + n);      // O(n)
 
     for (auto element : arr) {
         cout << element << " ";
     }
 }
 
-// Time-complexity:  O(2n)
-// Space-complexity: O(1)
+// Time-complexity :  O(2n)
+// Space-complexity : O(1)

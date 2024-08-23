@@ -2,6 +2,8 @@ package Step03_Arrays.Lec1_Easy;
 
 import java.util.Scanner;
 
+// Check if the array is sorted
+
 public class Program_03 {
     public static boolean isSorted(int arr[]) {
         for (int i = 1; i < arr.length; i++) {

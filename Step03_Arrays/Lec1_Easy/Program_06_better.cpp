@@ -29,5 +29,5 @@ int main() {
     }
 }
 
-// Time-complexity:  O(n+d)
-// Space-complexity: O(d)
+// Time-complexity :  O(n+d)
+// Space-complexity : O(d)
