@@ -37,6 +37,6 @@ int main() {
     }
 }
 
-// Time-complexity:  O(n1+n2)
-// Space-complexity: O(n1+n2) [for returning the answer-array]
-// Space-complexity: O(1)     [for processing, no extra space is used]
+// Time-complexity  : O(n1+n2)
+// Space-complexity : O(n1+n2) [for returning the answer-array]
+// Space-complexity : O(1)     [for processing, no extra space is used]
