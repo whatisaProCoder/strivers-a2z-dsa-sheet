@@ -4,18 +4,8 @@ package Step03_Arrays.Lec1_Easy;
 // Use Hashing.
 
 public class Program_11_better {
-    public static int getMaxElement(int[] nums) {
-        int maxElement = Integer.MIN_VALUE;
-        for (int element : nums) {
-            if (element > maxElement) {
-                maxElement = element;
-            }
-        }
-        return maxElement;
-    }
-
     public static int missingNumber(int[] nums) {
-        int[] hash = new int[getMaxElement(nums) + 1];
+        int[] hash = new int[nums[nums.length - 1] + 1];
 
         // O(N)
         for (int i = 0; i < nums.length; i++) {
