@@ -11,11 +11,7 @@ public class Program_2_map {
         SortedMap<Character, Integer> map = new TreeMap<>();
         for (int i = 0; i < s.length(); i++) {
             char key = s.charAt(i);
-            int frequency = 0;
-            if (map.containsKey(key))
-                frequency = map.get(key);
-            frequency++;
-            map.put(key, frequency);
+            map.put(key, map.getOrDefault(key, 0) + 1);
         }
 
         // iterate in the map
@@ -26,10 +22,7 @@ public class Program_2_map {
 
         char[] query = {'b', 'd'};
         for (char ch : query) {
-            if (map.containsKey(ch))
-                System.out.println(map.get(ch));
-            else
-                System.out.println(0);
+            System.out.println(map.getOrDefault(ch, 0));
         }
     }
 }
