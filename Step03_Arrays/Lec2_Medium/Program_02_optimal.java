@@ -1,11 +1,9 @@
 package Step03_Arrays.Lec2_Medium;
 
+import java.util.*;
+
 // Sort an array of 0's 1's and 2's
 // Optimal : Dutch National Flag Algorithm
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Program_02_optimal {
     public static void sortArray(ArrayList<Integer> nums) {
