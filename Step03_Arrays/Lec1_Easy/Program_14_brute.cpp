@@ -3,7 +3,7 @@ using namespace std;
 
 // Longest subarray with given sum K (positives+zeroes+negatives)
 // Contiguous part of the array is a subarray.
-// Brute : Generate all subarrays.
+// Brute : Generate all sub-arrays.
 // For negatives, this is the better solution.
 
 int max_subarray_len(vector<int> nums, int K) {
