@@ -48,6 +48,6 @@ int main() {
     cout << "Longest subarray length : " << max_subarray_len(nums, K);
 }
 
-// Time-complexity  : O(N log N)         [for ordered map]
-//                    O(N x 1) to O(N^2) [for unordered_map]
+// Time-complexity  : O(N log N)             [for ordered map]
+//                    O(N x 1) to O(N ^ 2) [for unordered_map]
 // Space-complexity : O(N)
