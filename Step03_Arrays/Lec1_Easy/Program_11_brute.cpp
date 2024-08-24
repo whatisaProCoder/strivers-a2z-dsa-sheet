@@ -31,4 +31,4 @@ int main() {
     cout << "Missing number : " << missingNumber(arr);
 }
 
-// Time-complexity: O(N^2)
+// Time-complexity : O(N^2)
