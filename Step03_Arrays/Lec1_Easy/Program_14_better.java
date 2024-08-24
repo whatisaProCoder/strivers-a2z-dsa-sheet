@@ -37,7 +37,7 @@ public class Program_14_better {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 1, 0, -2, 2, 1};
+        int[] nums = {1, 2, 1, 0, 0, -2, 2, 1};
         int K = 4;
 
         System.out.println("Sum K = " + K);
