@@ -1,18 +1,20 @@
 package Step03_Arrays.Lec2_Medium;
 
-// Kadane's Algorithm, maximum sub-array sum
-// Better : Using two for-loops
+// Kadane's Algorithm, maximum subarray sum
+// Brute : Using three for-loops
 
-public class Program_04_better {
+public class Program_04_brute {
     public static int maxSubArraySum(int[] nums) {
         int n = nums.length;
         int sum;
         int maxSum = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
-            sum = 0;
             for (int j = i; j < n; j++) {
-                sum += nums[j];
+                sum = 0;
+                for (int k = i; k <= j; k++) {
+                    sum += nums[k];
+                }
                 maxSum = Math.max(maxSum, sum);
             }
         }
@@ -27,5 +29,5 @@ public class Program_04_better {
     }
 }
 
-// Time-complexity  : O(N^2)
+// Time-complexity  : O(~N^3)
 // Space-complexity : O(1)
