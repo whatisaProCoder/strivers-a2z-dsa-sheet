@@ -22,7 +22,7 @@ public class Program_06_brute {
             }
         }
 
-        // O(N)
+        // O(N/2)
         for (int i = 0; i < n / 2; i++) {
             nums[2 * i] = pos.get(i);
             nums[2 * i + 1] = neg.get(i);
@@ -39,5 +39,5 @@ public class Program_06_brute {
     }
 }
 
-// Time-complexity  : O(N) + O(N)
+// Time-complexity  : O(N) + O(N/2)
 // Space-complexity : O(N/2) + O(N/2)

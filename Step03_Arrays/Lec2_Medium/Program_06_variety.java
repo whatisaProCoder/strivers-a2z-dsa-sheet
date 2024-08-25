@@ -58,5 +58,9 @@ public class Program_06_variety {
     }
 }
 
-// Time-complexity  : O(N) + O(N)
-// Space-complexity : O(N/2) + O(N/2)
+// Time-complexity  : O(N) + O(min(pos.size(), neg.size())) + O(leftover)
+//             min  : O(N) + O(0) + O(N)               [all are pos/negs]
+//             max  : O(N) + O(N/2) + O(0)
+//           worst  : O(N) + O(N)
+//
+// Space-complexity : O(N)
