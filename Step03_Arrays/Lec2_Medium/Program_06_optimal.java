@@ -1,7 +1,6 @@
 package Step03_Arrays.Lec2_Medium;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 // Rearrange the array in alternating positive and negative items
 // nums.length = always even
