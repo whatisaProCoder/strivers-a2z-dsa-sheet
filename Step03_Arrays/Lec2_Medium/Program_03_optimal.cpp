@@ -28,6 +28,7 @@ int majority_element(vector<int> nums) {
     if (cnt1 > n / 2) {
         return ele;
     }
+
     return -1;
 }
 
