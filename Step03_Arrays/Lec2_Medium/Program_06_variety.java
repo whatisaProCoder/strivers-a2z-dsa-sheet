@@ -21,6 +21,7 @@ public class Program_06_variety {
             }
         }
 
+        // O(N)
         if (pos.size() > neg.size()) {
             for (int i = 0; i < neg.size(); i++) {
                 nums[2 * i] = pos.get(i);
@@ -58,4 +59,4 @@ public class Program_06_variety {
 }
 
 // Time-complexity  : O(N) + O(N)
-// Space-complexity : O(N)
+// Space-complexity : O(N/2) + O(N/2)

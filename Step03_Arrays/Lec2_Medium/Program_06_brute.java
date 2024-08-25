@@ -40,4 +40,4 @@ public class Program_06_brute {
 }
 
 // Time-complexity  : O(N) + O(N)
-// Space-complexity : O(N)
+// Space-complexity : O(N/2) + O(N/2)
