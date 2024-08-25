@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Kadane's Algorithm, maximum subarray sum
+// Kadane's Algorithm, maximum sub-array sum
 // Better : Using two for-loops
 
 int max_subarray_sum(vector<int> nums) {
@@ -28,7 +28,7 @@ int main() {
         cin >> nums[i];
     }
 
-    cout << "Maximum subarray sum = " << max_subarray_sum(nums);
+    cout << "Maximum sub-array sum = " << max_subarray_sum(nums);
 }
 
 // Time-complexity  : O(N^2)
