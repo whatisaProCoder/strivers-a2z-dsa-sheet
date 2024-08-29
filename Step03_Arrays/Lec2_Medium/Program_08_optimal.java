@@ -3,7 +3,7 @@ package Step03_Arrays.Lec2_Medium;
 import java.util.*;
 
 // Leaders in an Array problem
-// Brute Force Solution
+// Optimal Solution
 
 public class Program_08_optimal {
     public static ArrayList<Integer> getLeaders(int[] nums) {
