@@ -41,5 +41,5 @@ public class Program_07_optimal {
     }
 }
 
-// Time-complexity  : O(N) + O(N) + O(N)
+// Time-complexity  : O(N) + O(N) + O(N) = O(3N)
 // Space-complexity : O(1)
