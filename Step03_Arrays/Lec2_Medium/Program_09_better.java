@@ -36,5 +36,5 @@ public class Program_09_better {
     }
 }
 
-// Time-complexity  : O(N^2)
+// Time-complexity  : O(N log N) + O(N)
 // Space-complexity : O(1)
