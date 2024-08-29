@@ -20,7 +20,7 @@ public class Program_07_brute {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3, 2, 1};
+        int[] nums = {3, 1, 2};
 
         System.out.println("Next permutation..");
         System.out.println(Arrays.toString(nextPermutation(nums)));
