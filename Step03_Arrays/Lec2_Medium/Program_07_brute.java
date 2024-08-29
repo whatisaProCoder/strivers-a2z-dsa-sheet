@@ -14,16 +14,16 @@ public class Program_07_brute {
         return null;
     }
 
-    public static int[] nextPermutation(int[] nums) {
+    public static ArrayList<Integer> nextPermutation(ArrayList<Integer> nums) {
         // move to optimal solution
         return null;
     }
 
     public static void main(String[] args) {
-        int[] nums = {3, 1, 2};
+        ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(3, 1, 2));
 
         System.out.println("Next permutation..");
-        System.out.println(Arrays.toString(nextPermutation(nums)));
+        System.out.println(nextPermutation(nums));
     }
 }
 

@@ -23,7 +23,7 @@ public class Program_07_optimal {
 
         for (int i = n - 1; i > index; i--) {
             if (nums.get(i) > nums.get(index)) {
-                Collections.swap(nums, i, index);
+                Collections.swap(nums, index, i);
                 break;
             }
         }
