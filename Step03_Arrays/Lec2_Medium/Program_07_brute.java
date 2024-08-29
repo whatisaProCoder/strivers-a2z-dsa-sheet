@@ -9,32 +9,9 @@ import java.util.*;
 //  3. Next permutation is the answer
 
 public class Program_07_brute {
-    public static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-
-    public static void recursivePermutationFunction(int index, int[] nums, List<List<Integer>> answer) {
-        if (index == nums.length) {
-            ArrayList<Integer> temp = new ArrayList<>();
-            for (int element : nums) {
-                temp.add(element);
-            }
-            answer.add(temp);
-        } else {
-            for (int i = index; i < nums.length; i++) {
-                swap(nums, index, i);
-                recursivePermutationFunction(index + 1, nums, answer);
-                swap(nums, index, i);
-            }
-        }
-    }
-
     public static List<List<Integer>> generateAllPermutations(int[] nums) {
-        List<List<Integer>> answer = new ArrayList<>();
-        recursivePermutationFunction(0, nums, answer);
-        return answer;
+        // very long code, can ignore
+        return null;
     }
 
     public static int[] nextPermutation(int[] nums) {
@@ -43,9 +20,7 @@ public class Program_07_brute {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
-
-        System.out.println(generateAllPermutations(nums));
+        int[] nums = {3, 2, 1};
 
         System.out.println("Next permutation..");
         System.out.println(Arrays.toString(nextPermutation(nums)));
