@@ -9,7 +9,7 @@ import java.util.*;
 //  3. Next permutation is the answer
 
 public class Program_07_brute {
-    public static List<List<Integer>> generateAllPermutations(int[] nums) {
+    public static List<List<Integer>> generateAllPermutations(ArrayList<Integer> nums) {
         // very long code, can ignore
         return null;
     }
