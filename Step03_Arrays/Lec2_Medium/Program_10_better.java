@@ -3,39 +3,26 @@ package Step03_Arrays.Lec2_Medium;
 // Set Matrix Zeros
 // Brute Force Approach
 
-public class Program_10_brute {
-    public void markRow(int[][] matrix, int i) {
-        for (int j = 0; j < matrix[0].length; j++) {
-            if (matrix[i][j] != 0) {
-                matrix[i][j] = -1;
-            }
-        }
-    }
-
-    public void markColumn(int[][] matrix, int j) {
-        for (int i = 0; i < matrix.length; i++) {
-            if (matrix[i][j] != 0) {
-                matrix[i][j] = -1;
-            }
-        }
-    }
-
+public class Program_10_better {
     public void setZeroes(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
 
+        int[] rowHash = new int[n];
+        int[] colHash = new int[m];
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (matrix[i][j] == 0) {
-                    markRow(matrix, i);
-                    markColumn(matrix, j);
+                    rowHash[i] = 1;
+                    colHash[j] = 1;
                 }
             }
         }
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                if (matrix[i][j] == -1) {
+                if (rowHash[i] == 1 || colHash[j] == 1) {
                     matrix[i][j] = 0;
                 }
             }
@@ -53,7 +40,7 @@ public class Program_10_brute {
             System.out.println();
         }
 
-        new Program_10_brute().setZeroes(matrix);
+        new Program_10_better().setZeroes(matrix);
 
         System.out.println("After processing..");
         for (int i = 0; i < matrix.length; i++) {
@@ -65,6 +52,6 @@ public class Program_10_brute {
     }
 }
 
-// Time-complexity  : O((n * m) * (n + m) + (n * m))
-//                 => ~O(n^3)
-// Space-complexity : O(1)
+// Time-complexity  : O((n * m) + (n * m))
+//                 => O(2 * (n * m))
+// Space-complexity : O(n) + O(m)
