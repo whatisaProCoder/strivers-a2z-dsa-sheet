@@ -35,7 +35,6 @@ public class Program_10_optimal {
                 }
             }
         }
-
         if (matrix[0][0] == 0) {
             for (int j = 0; j < m; j++) {
                 matrix[0][j] = 0;
@@ -73,4 +72,4 @@ public class Program_10_optimal {
 
 // Time-complexity  : O((n * m) + (n * m))
 //                 => O(2 * (n * m))
-// Space-complexity : O(n) + O(m)
+// Space-complexity : O(1)
