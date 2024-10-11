@@ -1,7 +1,5 @@
 package Step03_Arrays.Lec1_Easy;
 
-import java.util.*;
-
 // Left Rotate an array by 'd' places
 
 public class Program_06_optimal {
@@ -29,7 +27,7 @@ public class Program_06_optimal {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
         int n = arr.length;
         int d = 4; // rotate by 2 places;
 
@@ -41,5 +39,5 @@ public class Program_06_optimal {
     }
 }
 
-// Time-complexity  : O(2n)
+// Time-complexity : O(2n)
 // Space-complexity : O(1)

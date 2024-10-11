@@ -6,16 +6,16 @@ package Step03_Arrays.Lec2_Medium;
 public class Program_02_better {
     public static void sortArray(int[] nums) {
         int n = nums.length;
-        int count0, count1, count2;
-        count0 = count1 = count2 = 0;
+        int count0, count1;
+        count0 = count1 = 0;
 
         for (int element : nums) {
             if (element == 0)
                 count0++;
             else if (element == 1)
                 count1++;
-            else
-                count2++;
+            else {
+            }
         }
 
         for (int i = 0; i < count0; i++) {
@@ -30,7 +30,7 @@ public class Program_02_better {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2, 0, 2, 1, 1, 0};
+        int[] nums = { 2, 0, 2, 1, 1, 0 };
         sortArray(nums);
         for (int element : nums) {
             System.out.print(element + " ");
@@ -38,5 +38,5 @@ public class Program_02_better {
     }
 }
 
-// Time-complexity  : O(2N)
+// Time-complexity : O(2N)
 // Space-complexity : O(1)

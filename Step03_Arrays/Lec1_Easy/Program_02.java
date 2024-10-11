@@ -1,14 +1,12 @@
 package Step03_Arrays.Lec1_Easy;
 
-import java.util.*;
-
 // Second Largest Element in an Array without sorting
 // only for non-negative numbers
 
 @SuppressWarnings("ALL")
 public class Program_02 {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 77, 6, 4, 33, 2, 6, 88};
+        int[] arr = { 1, 2, 77, 6, 4, 33, 2, 6, 88 };
         int n = arr.length;
         // processing
         int largest = arr[0];

@@ -6,8 +6,7 @@ import java.util.*;
 
 public class Program_1_umap {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6};
-        int n = arr.length;
+        int[] arr = { 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6 };
 
         // precompute
         Map<Integer, Integer> umap = new HashMap<>();
@@ -21,7 +20,7 @@ public class Program_1_umap {
             System.out.println(mapElement.getKey() + " -> " + mapElement.getValue());
         }
 
-        int[] query = {1, 4, 7};
+        int[] query = { 1, 4, 7 };
         for (int num : query) {
             System.out.println(umap.getOrDefault(num, 0));
         }

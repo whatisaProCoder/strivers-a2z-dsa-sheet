@@ -1,7 +1,5 @@
 package Step03_Arrays.Lec1_Easy;
 
-import java.util.Scanner;
-
 // Check if the array is sorted
 
 public class Program_03 {
@@ -17,7 +15,7 @@ public class Program_03 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 5, 6, 7, 8};
+        int[] arr = { 1, 2, 3, 5, 6, 7, 8 };
 
         if (isSorted(arr)) {
             System.out.println("Sorted");

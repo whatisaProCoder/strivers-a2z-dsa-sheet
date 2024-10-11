@@ -1,12 +1,10 @@
 package Step03_Arrays.Lec1_Easy;
 
-import java.util.*;
-
 // Remove duplicates from Sorted array
 
 public class Program_04 {
     public static void main(String[] args) {
-        int[] arr = {1, 1, 2, 2, 2, 3, 3, 5, 5, 5, 8, 8, 8, 9, 9};
+        int[] arr = { 1, 1, 2, 2, 2, 3, 3, 5, 5, 5, 8, 8, 8, 9, 9 };
         int n = arr.length;
 
         System.out.println("Before processing...");

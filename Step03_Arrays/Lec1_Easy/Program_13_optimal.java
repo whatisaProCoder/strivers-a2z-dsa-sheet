@@ -1,7 +1,5 @@
 package Step03_Arrays.Lec1_Easy;
 
-import java.util.*;
-
 // Find the number that appears once, and other numbers twice.
 // Input  : 1 1 2 3 3 4 4
 // Output : 2 (APPEARS ONCE)
@@ -20,11 +18,11 @@ public class Program_13_optimal {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 1, 2, 2, 3, 7, 7, 9, 9};
+        int[] nums = { 1, 1, 2, 2, 3, 7, 7, 9, 9 };
 
         System.out.println("Appears once = " + appearsOnce(nums));
     }
 }
 
-// Time-complexity  : O(N)
+// Time-complexity : O(N)
 // Space-complexity : O(1)
