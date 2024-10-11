@@ -3,8 +3,6 @@ using namespace std;
 
 // Print the matrix in spiral manner
 
-// Time-complexity  : O(n * m)
-// Space-complexity : O(n * m) [for storing the answer]
 vector<int> spiralOrder_OPTIMAL(vector<vector<int>> &matrix) {
     int n = matrix.size();
     int m = matrix[0].size();
@@ -45,6 +43,8 @@ vector<int> spiralOrder_OPTIMAL(vector<vector<int>> &matrix) {
 
     return ans;
 }
+// Time-complexity  : O(n * m)
+// Space-complexity : O(n * m) [for storing the answer]
 
 int main() {
     int n;

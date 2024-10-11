@@ -3,8 +3,6 @@ using namespace std;
 
 // Count subarrays with given sum
 
-// Time-complexity  : O(n^3)
-// Space-complexity : O(1)
 int subarraySum_BRUTE(vector<int> &nums, int k) {
     int n = nums.size();
     int cnt = 0;
@@ -20,9 +18,9 @@ int subarraySum_BRUTE(vector<int> &nums, int k) {
     }
     return cnt;
 }
-
-// Time-complexity  : O(n^2)
+// Time-complexity  : O(n^3)
 // Space-complexity : O(1)
+
 int subarraySum_BETTER(vector<int> &nums, int k) {
     int n = nums.size();
     int cnt = 0;
@@ -36,9 +34,9 @@ int subarraySum_BETTER(vector<int> &nums, int k) {
     }
     return cnt;
 }
+// Time-complexity  : O(n^2)
+// Space-complexity : O(1)
 
-// Time-complexity  : O(n log n)
-// Space-complexity : O(n)
 int subarraySum_OPTIMAL(vector<int> &nums, int k) {
     int n = nums.size();
     map<int, int> mpp;
@@ -52,6 +50,8 @@ int subarraySum_OPTIMAL(vector<int> &nums, int k) {
     }
     return cnt;
 }
+// Time-complexity  : O(n log n)
+// Space-complexity : O(n)
 
 int main() {
     int n;
