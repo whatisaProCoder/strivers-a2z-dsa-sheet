@@ -41,7 +41,8 @@ vector<vector<int>> threeSum_BETTER(vector<int> &nums) {
     vector<vector<int>> ans(st.begin(), st.end());
     return ans;
 }
-// Time-complexity  : O(n^2 * log M)
+// Time-complexity  : O(n^2 * log (number of elements in the hashset,
+//                                 variable throughout execution))
 // Space-complexity : O(n) + O(2 * (number of unique triplets))
 
 vector<vector<int>> threeSum_OPTIMAL(vector<int> &nums) {
