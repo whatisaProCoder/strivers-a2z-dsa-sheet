@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Problem
+// 3-Sum Problem
 
 vector<vector<int>> threeSum_BRUTE(vector<int> &nums) {
     int n = nums.size();
