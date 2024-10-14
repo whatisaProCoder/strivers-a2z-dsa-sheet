@@ -6,22 +6,36 @@
             "type": "shell",
             "command": "",
             "args": [
-                "java",
-                "${relativeFile}",
+                "copy",
+                "\"${file}\"",
+                "${workspaceFolder}\\jspwTest.cpp",
+                "&&",
+                "g++",
+                "jspwTest.cpp",
+                "-o",
+                "jspwTest",
+                "&&",
+                "jspwTest",
                 "<",
                 "input.txt",
                 ">",
-                "output.txt"
+                "output.txt",
+                "&&",
+                "del",
+                "jspwTest.exe",
+                "&&",
+                "del",
+                "jspwTest.cpp"
             ],
             "presentation": {
                 "reveal": "never"
             },
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": true,
             },
             "problemMatcher": {
-                "owner": "py",
+                "owner": "cpp",
                 "fileLocation": [
                     "relative",
                     "${workspaceRoot}"
